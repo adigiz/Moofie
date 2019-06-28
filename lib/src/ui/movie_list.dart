@@ -24,7 +24,7 @@ class MovieList extends StatelessWidget {
     );
   }
 
-  Widget buildList(AsyncSnapshot<ItemMode> snapshot) {
+  Widget buildList(AsyncSnapshot<ItemModel> snapshot) {
     return GridView.builder(
         itemCount: snapshot.data.results.length,
         gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:2),
